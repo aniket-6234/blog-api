@@ -1,0 +1,26 @@
+{
+  "name": "blog-api",
+  "version": "1.0.0",
+  "description": "rest api of blog-app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "dev": "node index.js"
+  },
+  "keywords": [
+    "Node",
+    "JS",
+    "Express",
+    "JS",
+    "Mongoose"
+  ],
+  "author": "Aniket Raikwar",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.2",
+    "nodemon": "^2.0.22"
+  }
+}
