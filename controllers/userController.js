@@ -74,11 +74,8 @@ const getAllUser = async (req, res) => {
 };
 
 const getProfileData = async (req, res) => {
-  const { id } = req.params;
   try {
-    const token = getTokenFromHeader(req);
-    console.log("token: ", token);
-    const user = await User.findById(id);
+    const user = await User.findById(req.userAuth);
     if (!user) {
       return res.json({
         msg: "User not found",
